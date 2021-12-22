@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+:root {
+  --orange: hsl(31, 77%, 52%);
+  --dkcyan: hsl(184, 100%, 22%);
+  --verydarkcyan: hsl(179, 100%, 13%);
+  --para: hsla(0, 0%, 100%, 0.75);
+  --lightgrey: hsl(0, 0%, 95%);
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.5rem;
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--para);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+h2 {
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+    color: var(--lightgrey);
+    font-size: 3rem;
+}
+p {
+    line-height: 1.6;
+}
+.container {
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.card {
+    max-width: 360px;
+    padding: 6.2rem;
+}
+.card--primary {
+    background: var(--orange);
+}
+.card--secondary {
+    background: var(--dkcyan);
+}
+.card--accent {
+    background: var(--verydarkcyan);
+}
+
+.btn {
+    border: none;
+    outline: none;
+    padding: 1rem 2rem;
+    white-space: nowrap;
+    border-radius: 2rem;
+    background: var(--lightgrey);
+}
+.btn--primary {
+    color: var(--orange);
+}
+.btn--secondary {
+    color: var(--dkcyan);
+}
+.btn--accent {
+    color: var(--verydarkcyan);
+}
+
+@media (min-width: 1440px) {
+    .container {
+        display: flex;
+    }
+}
